@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic)SmileGenerator *smilegenerator;
 @property (weak, nonatomic) IBOutlet UILabel *complimentLabel;
+@property (weak, nonatomic) IBOutlet UITextField *complimentTextField;
 
 @end
 
@@ -30,6 +31,9 @@
     NSString *compliment = nil;
     compliment = [self.smilegenerator pickCompliment];
     self.complimentLabel.text = compliment;
+}
+
+- (IBAction)clickAddComplimentButton:(UIButton *)sender {
 }
 
 @end
