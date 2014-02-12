@@ -34,6 +34,12 @@
 }
 
 - (IBAction)clickAddComplimentButton:(UIButton *)sender {
+    if (self.complimentTextField.text.length) {
+        NSString *compliment = self.complimentTextField.text;
+        [self.smilegenerator addCompliment:compliment];
+    }
+    
+    self.complimentTextField.text = @"";
 }
 
 @end
