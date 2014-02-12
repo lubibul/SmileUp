@@ -11,5 +11,6 @@
 @interface SmileGenerator : NSObject
 
 - (NSString *)pickCompliment;
+- (void)addCompliment:(NSString *)compliment;
 
 @end

@@ -46,4 +46,10 @@
     
     return result;
 }
+
+- (void)addCompliment:(NSString *)compliment
+{
+    [self.compliments addObject:compliment];
+}
+
 @end
