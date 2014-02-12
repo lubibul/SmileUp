@@ -21,6 +21,7 @@
 		737967EA18ABF79700350AC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737967CC18ABF79700350AC1 /* UIKit.framework */; };
 		737967F218ABF79700350AC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 737967F018ABF79700350AC1 /* InfoPlist.strings */; };
 		737967F418ABF79700350AC1 /* SmileUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737967F318ABF79700350AC1 /* SmileUpTests.m */; };
+		7379680018ABF97800350AC1 /* SmileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 737967FF18ABF97800350AC1 /* SmileGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		737967EF18ABF79700350AC1 /* SmileUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmileUpTests-Info.plist"; sourceTree = "<group>"; };
 		737967F118ABF79700350AC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		737967F318ABF79700350AC1 /* SmileUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileUpTests.m; sourceTree = "<group>"; };
+		737967FE18ABF97800350AC1 /* SmileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmileGenerator.h; path = Model/SmileGenerator.h; sourceTree = "<group>"; };
+		737967FF18ABF97800350AC1 /* SmileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmileGenerator.m; path = Model/SmileGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 		737967FD18ABF7B000350AC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				737967FE18ABF97800350AC1 /* SmileGenerator.h */,
+				737967FF18ABF97800350AC1 /* SmileGenerator.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7379680018ABF97800350AC1 /* SmileGenerator.m in Sources */,
 				737967DF18ABF79700350AC1 /* SmileUpViewController.m in Sources */,
 				737967D918ABF79700350AC1 /* SmileUpAppDelegate.m in Sources */,
 				737967D518ABF79700350AC1 /* main.m in Sources */,
