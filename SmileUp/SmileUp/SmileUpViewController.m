@@ -7,23 +7,29 @@
 //
 
 #import "SmileUpViewController.h"
+#import "SmileGenerator.h"
 
 @interface SmileUpViewController ()
+
+@property (strong, nonatomic)SmileGenerator *smilegenerator;
+@property (weak, nonatomic) IBOutlet UILabel *complimentLabel;
 
 @end
 
 @implementation SmileUpViewController
 
-- (void)viewDidLoad
+- (SmileGenerator *)smilegenerator
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    if (!_smilegenerator) {
+        _smilegenerator = [[SmileGenerator alloc] init];
+    }
+    return _smilegenerator;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickSmileButton:(UIButton *)sender {
+    NSString *compliment = nil;
+    compliment = [self.smilegenerator pickCompliment];
+    self.complimentLabel.text = compliment;
 }
 
 @end

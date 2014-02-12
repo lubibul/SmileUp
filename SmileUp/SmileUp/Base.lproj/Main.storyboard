@@ -30,10 +30,16 @@
                                 <state key="normal" title="make me smile!" backgroundImage="white-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickSmileButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x2W-5a-TI3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="complimentLabel" destination="t7w-Qj-rhn" id="4nE-bJ-WoQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
